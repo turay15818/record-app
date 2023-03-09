@@ -4,7 +4,7 @@ import cors from "cors"
 import ShopA from "./routes/ShopA.js"
 import ShopB from "./routes/ShopB.js"
 import ShopC from "./routes/ShopC.js"
-import ShopD from "./routes/ShopD"
+import ShopD from "./routes/ShopD.js"
 import CountResult from "./routes/CountResult.js"
 
 
