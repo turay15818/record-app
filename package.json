@@ -2,9 +2,8 @@
 "version": "1.0.0",
 "type": "module",
 "description": "This is a complain app",
-"main": "server.js",
+"main": "index.js",
 "scripts": {
-  "test": "jest --watchAll",
   "start": "node index.js",
   "devStart": "nodemon index.js"
 },
