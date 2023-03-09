@@ -24,15 +24,6 @@ app.use(ShopD);
 app.use(CountResult);
 
 
-
-// const PORT = process.env.PORT || 3333;
-// app.listen(PORT, (error) => {
-//     error ? console.error(error) : console.log(`server running on port \n http://172.25.164.15:${PORT}`);
-// });
-
-
-
-
 app.listen(process.env.PORT || PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+  console.log(`Server is listening on port`);
 });
