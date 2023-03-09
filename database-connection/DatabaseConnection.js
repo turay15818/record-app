@@ -1,11 +1,18 @@
-const mysql = require("mysql");
+import mysql from "mysql";
 
 
 const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "!Love2code",
-    database: "track_location",
-  });
+  host: "us-cdbr-east-06.cleardb.net",
+  user: "b5aa2ed6049b35",
+  password: "07e66372",
+  database: "heroku_1e91f7342aea06b",
+});
 
-  module.exports= connection
+
+
+// username = b5aa2ed6049b35
+// password = 07e66372
+// host = us-cdbr-east-06.cleardb.net
+// databaseName = heroku_1e91f7342aea06b
+
+export default connection

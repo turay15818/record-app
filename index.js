@@ -1,11 +1,13 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors")
-const ShopA = require("./routes/ShopA")
-const ShopB = require("./routes/ShopB")
-const ShopC = require("./routes/ShopC")
-const ShopD = require("./routes/ShopD")
-const CountResult = require("./routes/CountResult")
+import express from "express";
+import bodyParser from "body-parser"
+import cors from "cors"
+import ShopA from "./routes/ShopA.js"
+import ShopB from "./routes/ShopB.js"
+import ShopC from "./routes/ShopC.js"
+import ShopD from "./routes/ShopD"
+import CountResult from "./routes/CountResult.js"
+
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -21,23 +23,16 @@ app.use(ShopC);
 app.use(ShopD);
 app.use(CountResult);
 
-// app.post("/api/save-visitor-location", (req, res) => {
-//     const { latitude, longitude } = req.body;
 
-//     const sql = "INSERT INTO locations (latitude, longitude) VALUES (?, ?) ON DUPLICATE KEY UPDATE timestamp=CURRENT_TIMESTAMP";
-//     const values = [latitude, longitude];
 
-//     connection.query(sql, values, (error, results, fields) => {
-//         if (error) {
-//             console.log(error);
-//             res.sendStatus(500);
-//         } else {
-//             console.log(results.affectedRows); 
-//             res.sendStatus(200);
-//         }
-//     });
+// const PORT = process.env.PORT || 3333;
+// app.listen(PORT, (error) => {
+//     error ? console.error(error) : console.log(`server running on port \n http://172.25.164.15:${PORT}`);
 // });
 
-app.listen(7900, () => {
-  console.log("Server is listening on port 7900");
+
+
+
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
 });

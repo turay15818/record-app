@@ -1,6 +1,6 @@
-const express = require("express")
-const router = require('express').Router();
-const connection = require("../database-connection/DatabaseConnection")
+import express from "express"
+import connection from "../database-connection/DatabaseConnection.js"
+const router = express.Router()
 
 
 // my_orange_app_download_for_iphone_at_regent_rd
@@ -154,7 +154,7 @@ select 'orange_money_africa_app_download_for_android_at_wilkenson_rd' as total_d
 });
 
 
-
+export default router
 
 
 

@@ -1,7 +1,6 @@
-const express = require("express")
-const router = require('express').Router();
-const connection = require("../database-connection/DatabaseConnection")
-
+import express from "express"
+import connection from "../database-connection/DatabaseConnection.js"
+const router = express.Router()
 
 
 router.post("/api/orangeMoneyAfrica-for-shop-C/Android", (req, res) => {
@@ -65,4 +64,4 @@ router.post("/api/myOrange-for-shop-C/Iphone", (req, res) => {
 });
 
 
-module.exports = router
+export default router
