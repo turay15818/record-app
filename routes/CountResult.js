@@ -91,7 +91,7 @@ select 'orange_money_africa_app_download_for_android_at_wilkenson_rd' as total_d
         const my_orange_app_download_for_iphone_at_wilkenson_rd = results[12].total
         const my_orange_app_download_for_android_at_wilkenson_rd = results[13].total
         const orange_money_africa_app_download_for_iphone_at_wilkenson_rd = results[14].total
-        const orange_money_africa_app_download_for_android_at_wilkenson_rd = results[5].total
+        const orange_money_africa_app_download_for_android_at_wilkenson_rd = results[15].total
 
 
 
