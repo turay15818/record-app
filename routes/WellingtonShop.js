@@ -4,7 +4,7 @@ const router = express.Router()
 
 
 
-router.post("/api/orangeMoneyAfrica-for-wellingtonshop/Android", (req, res) => {
+router.post("/api/orangeMoneyAfrica-for-wellingtonshop/Iphone", (req, res) => {
     const { downloadLocation, appDownloaded, coordinate, timestamp } = req.body;
     const sql = "INSERT INTO downloadInformation (downloadLocation, appDownloaded, coordinate) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE timestamp=CURRENT_TIMESTAMP";
     const values = [downloadLocation, appDownloaded, coordinate, timestamp];
