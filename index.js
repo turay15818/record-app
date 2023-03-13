@@ -1,12 +1,18 @@
 import express from "express";
 import bodyParser from "body-parser"
 import cors from "cors"
-import ShopA from "./routes/ShopA.js"
-import ShopB from "./routes/ShopB.js"
-import ShopC from "./routes/ShopC.js"
-import ShopD from "./routes/ShopD.js"
 import CountResult from "./routes/CountResult.js"
 
+
+import BoShop from "./routes/BoShop.js"
+import HQShop from "./routes/HQShop.js"
+import KenemaShop from "./routes/KenemaShop.js"
+import KonoShop from "./routes/KonoShop.js"
+import MakeniShop from "./routes/MakeniShop.js"
+import FlagshipShop from "./routes/FlagshipShop.js"
+import LungiShop from "./routes/FlagshipShop.js"
+import WellingtonShop from "./routes/FlagshipShop.js"
+import WaterlooShop from "./routes/FlagshipShop.js"
 
 const app = express();
 app.use(bodyParser.json());
@@ -17,11 +23,19 @@ app.use(cors());
 app.use(express.json());
 app.options("*", cors());
 
-app.use(ShopA);
-app.use(ShopB);
-app.use(ShopC);
-app.use(ShopD);
 app.use(CountResult);
+
+app.use(KenemaShop);
+app.use(HQShop);
+app.use(BoShop);
+app.use(KonoShop);
+app.use(MakeniShop);
+app.use(FlagshipShop);
+
+
+app.use(WellingtonShop);
+app.use(LungiShop);
+app.use(WaterlooShop);
 
 
 app.listen(process.env.PORT || PORT, () => {
