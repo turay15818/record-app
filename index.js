@@ -10,9 +10,9 @@ import KenemaShop from "./routes/KenemaShop.js"
 import KonoShop from "./routes/KonoShop.js"
 import MakeniShop from "./routes/MakeniShop.js"
 import FlagshipShop from "./routes/FlagshipShop.js"
-import LungiShop from "./routes/FlagshipShop.js"
-import WellingtonShop from "./routes/FlagshipShop.js"
-import WaterlooShop from "./routes/FlagshipShop.js"
+import LungiShop from "./routes/LungiShop.js"
+import WellingtonShop from "./routes/WellingtonShop.js"
+import WaterlooShop from "./routes/WaterlooShop.js"
 
 const app = express();
 app.use(bodyParser.json());
